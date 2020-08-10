@@ -1,0 +1,341 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+}
+
+html, body{
+    overflow-x: hidden;
+    max-width:100%;
+}
+
+#videoBG{
+    z-index: -2;
+    position: fixed;
+}
+@font-face{
+    font-family: 'Born-Losers';
+    src: url('./assets/Fonts/BornLosersSans-Regular.otf');
+    font-style: normal;
+}
+
+.landing{
+    height: 100vh;
+    /* background: url(./assets/85072451_2392900684144480_495752690404425728_o.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(31, 40, 51, 0.8); */
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.nav-item{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+/* .nav{
+    background: rgba(11, 12, 16, 0.4);
+} */
+
+.tagline{
+    flex: 1;
+    text-align: center;
+    font-size: 500%;
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.tagline button{
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    background: none;
+    border: 1px solid #66FCF1;
+    color: white;
+    outline: none;
+    border-radius: 18cm;
+}
+
+
+.tagline span{
+    color: #66FCF1; 
+    font-weight: 100;
+}
+
+.tagline i{
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.about-us{
+    color: white;
+    font-family: Roboto;
+    font-weight: 100;
+    background: url(./assets/compute-ea4c57a4.png);
+    background-attachment: fixed;
+}
+
+.about-content{
+    font-size: 1.2rem;
+}
+.overlay{
+    background-color: rgba(31, 40, 51, 0.8);
+    height: 100%;
+}
+
+.theme{
+    color: #66FCF1;
+}
+
+.our-identity{
+    /* height: 100vh; */
+    background: url('./assets/services-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.our-identity h1{
+    font-weight: 700;
+}
+.identity{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.identity i{
+    font-size: 2.5rem;
+}
+.identity h4{
+    font-size: 2rem;
+}
+
+.identity p{
+    opacity: 0.6;
+    font-size: 1.1rem;
+}
+.identity-item{
+    width:400px;
+}
+
+.cards{
+    margin-top: 40px;
+}
+
+.our-team{
+    background: url('./assets/compute-ea4c57a4.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.our-team h1 span{
+    font-weight: 700;
+    font-size: .5;
+}
+
+.our-team-content{
+    padding-top: 40px;
+}
+
+.our-team-content p {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+
+/* Card customization */
+.my-card{
+    height: 300px;
+    width: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    /* background: #1f2833; */
+}
+
+.card-1{
+    background-color: url('https://media.giphy.com/media/xTiTnkZoCSqp3Dn6yk/giphy.gif');
+}
+
+
+.card_title p{
+    font-size: 6rem;
+    color: white;
+    /* font-weight: 700; */
+    /* font-family: 'Leckerli One', cursive; */
+    font-family: 'Born-Losers';
+    text-transform: uppercase;
+    /* font-weight: 700; */
+}
+
+
+.my-card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+/* END */
+
+.contact-us{
+    background: url('./assets/3131118.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* height: 100vh; */
+}
+.contact-us h1 span{
+    font-weight: 700;
+}
+
+.overlay-2{
+    height:100%;
+    background-color: rgba(31, 40, 51, 0.9);
+}
+
+.contact-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.contact-us .container{
+    height: 100%;
+}
+
+.contact-us input{
+    height: 50px;
+}
+
+.contact-us input{
+    background: #1F2833;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.contact-us textarea{
+    border-radius: 10px;
+    background: #1F2833;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    color: white;
+    resize: none;
+}
+
+.contact-us input:hover{
+    background: #1F2833;
+}
+
+.contact-us button{
+    /* width: 100%; */
+    font-size: 1.3rem;
+    padding: 10px 60px;
+    background: #66FCF1;
+    /* border: 1px solid #66FCF1; */
+    /* color: white; */
+    color: #1F2833;
+    border: none;
+    border-radius: 25px;
+}
+
+.contact-us iframe{
+    width: 300px;
+    height: 300px;
+}
+.footer-content{
+    padding: 100px;
+}
+.links{
+    
+    /* display: flex;
+    flex-direction: column; */
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    transition: 0.4s;
+}
+
+.links a:hover{
+    background: #66FCF1;
+    color: #1F2833;
+}
+
+.footer p{
+    margin: 0;
+}
+
+.copyright:hover{
+    color: #66FCF1;
+    cursor: pointer;
+}
+
+/* Typewriter animation */
+
+@media(max-width: 992px){
+    nav{
+        background: rgba(11, 12, 16, 0.4);
+    }
+    .tagline{
+        font-size: 200%;
+    }
+    .contact-us{
+        text-align: center;
+    }
+    .contact-content{
+        margin: auto;
+    }
+    .follow{
+        margin-top: 50px;
+    }
+}
+
+
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(31, 40, 51, 0.8);
+    /*background-image: url('');*/
+  }
+  
