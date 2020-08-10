@@ -12,6 +12,7 @@ html, body{
 #videoBG{
     z-index: -2;
     position: fixed;
+    overflow: hidden;
 }
 @font-face{
     font-family: 'Born-Losers';
