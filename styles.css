@@ -172,14 +172,13 @@ html, body{
 .my-card{
     height: 300px;
     width: 300px;
+    /* background: url('');s */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 18px;
     transition: 0.4s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
     margin-top: 10px;
     margin-bottom: 40px;
     cursor: pointer;
@@ -188,7 +187,23 @@ html, body{
 }
 
 .card-1{
-    background-color: url('https://media.giphy.com/media/xTiTnkZoCSqp3Dn6yk/giphy.gif');
+    background: url('https://media.giphy.com/media/xTiTnkZoCSqp3Dn6yk/giphy.gif');
+}
+.card-2{
+    background: url('https://media.giphy.com/media/kog2J5GfDdPoY/giphy.gif');
+}
+.card-3{
+    background: url('https://media.giphy.com/media/YrNE3JZ8rI7TP7Hw0d/giphy.gif');
+}
+
+.custom-overlay{
+    border-radius: 18px;
+    height: 100%;
+    width: 100%;
+    background: rgba(31, 40, 51, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
