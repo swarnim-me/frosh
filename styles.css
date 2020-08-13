@@ -372,7 +372,8 @@ html, body{
 }
 
 .evetext, .starttext{
-    font-family: 'Great-Wishes';
+    font-family: 'Roboto';
+    font-weight: 100;
     color: white;
     font-size: 4rem;
     transition: 0.4s;
