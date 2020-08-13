@@ -30,7 +30,7 @@
         <div class="content">
             <nav class="navbar navbar-expand-lg navbar-dark">
 
-                <a class="navbar-brand" href="#">FROSH</a>
+                <a class="navbar-brand" href="#"><img src="./assets//FROSH2020_logo_white.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -41,19 +41,16 @@
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#">Team</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Events</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">help</a>
+                            <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -64,15 +61,25 @@
             </div>
         </div>
     </section>
-    <section class="events bg-dark row">
-        <div class="evework col-12 col-lg-6">
-            <div class="overlay-2 d-flex justify-content-center align-items-center">
-                <div class="text-center evetext unselectable">Events<br>Workshops</div>
+    <section class="events">
+        <div class="overlay-evestart row">
+            <div class="evework col-12 col-lg-6">
+                <div class="eve-card">
+                    <div class="stareve-overlay">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="text-center evetext unselectable">Events<br>Workshops</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="starter col-12 col-lg-6">
-            <div class="overlay-2 d-flex justify-content-center align-items-center">
-                <div class="text-center starttext unselectable">Starter<br>Kit</div>
+            <div class="starter col-12 col-lg-6">
+                <div class="start-card">
+                    <div class="stareve-overlay">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="text-center starttext unselectable">Starter<br>Kit</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -297,7 +304,9 @@
     </script>
     <script>
         $(document).ready(function () {
-            $(".bg-custom").hide();
+            setTimeout(function () {
+                $(".bg-custom").hide();
+            }, 3000);
         });
     </script>
 </body>

@@ -4,6 +4,10 @@
     font-family: Roboto;
 }
 
+html{
+    cursor: url('./assets/Asset.png'), auto;
+}
+
 html, body{
     overflow-x: hidden;
     max-width:100%;
@@ -25,6 +29,9 @@ html, body{
     font-style: normal;
 }
 
+.navbar-brand img{
+    width: 150px;
+}
 .landing{
     height: 100vh;
     /* background: url(./assets/85072451_2392900684144480_495752690404425728_o.jpg); */
@@ -86,7 +93,7 @@ html, body{
 
 .tagline i{
     font-size: 3rem;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .about-us{
@@ -171,7 +178,7 @@ html, body{
 
 /* Card customization */
 .my-card{
-    height: 300px;
+    height: 400px;
     width: 300px;
     /* background: url('');s */
     background-position: center;
@@ -182,7 +189,7 @@ html, body{
    
     margin-top: 10px;
     margin-bottom: 40px;
-    cursor: pointer;
+    /* cursor: pointer; */
     box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
     /* background: #1f2833; */
 }
@@ -201,10 +208,15 @@ html, body{
     border-radius: 18px;
     height: 100%;
     width: 100%;
-    background: rgba(31, 40, 51, 0.8);
+    background: rgba(31, 40, 51, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.stareve-overlay{
+    border-radius: 20px;
+    background-color: rgba(31, 40, 51, 0.4);
 }
 
 
@@ -330,51 +342,74 @@ html, body{
 
 .copyright:hover{
     color: #66FCF1;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .events{
-    height: 60vh;
+    /* height: 60vh; */
     /* border-top: 4px solid #1F2833;
     border-bottom: 4px solid #1F2833; */
+    /* background: url('./assets/3131118.jpg'); */
+    background: url('./assets/2531-01.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.overlay-evestart{
+    padding: 0;
+    margin: 0;
+    background: rgba(31, 40, 51, 0.6);
 }
 
 .events .col-lg-6{
-    padding: 0;
 }
 
 .starter{
-    background: url('./assets/kate-macate-xmddEHyCisc-unsplash.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: none;
-    cursor: pointer;
+    /* padding: none; */
+    padding: 30px 40px 30px 10px;
+    /* cursor: pointer; */
 }
 
 .evework{
-    background: url('./assets/88177431_2433707290063819_1858670814153408512_o.jpg');
+    
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: none;
-    cursor: pointer;
+    /* padding: 20px; */
+    padding: 30px 10px 30px 40px;
+    /* cursor: pointer; */
+}
+.eve-card, .start-card{
+    background: red;
+    border-radius: 20px;   
+    transition: 0.5s;
+}
+.eve-card:hover, .start-card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+.eve-card{
+    background: url('./assets/3256773.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.evework:hover .evetext{
-    font-size: 4.3rem;
-    color: #66FCF1;
-}
-.starter:hover .starttext{
-    font-size: 4.3rem;
-    color: #66FCF1;
+.start-card{
+    background: url('./assets/4162023.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .evetext, .starttext{
+    margin: 100px 100px;
     font-family: 'Roboto';
-    font-weight: 100;
+    font-weight: 700;
     color: white;
     font-size: 4rem;
     transition: 0.4s;
@@ -399,11 +434,9 @@ html, body{
     .evetext, .starttext{
         font-size: 2rem;
     }
-    .evework:hover .evetext{
-        font-size: 3rem;
-    }
-    .starter:hover .starttext{
-        font-size: 3rem;
+
+    .evework, .starter{
+        padding: 20px 50px;
     }
 }
 
@@ -428,7 +461,7 @@ html, body{
 
 .bg-custom {
     background-color: #222;
-    height: 100vh;
+    height: 6338px;
     width: 100vw;
     position: absolute;
     z-index: 100;
